@@ -31,3 +31,7 @@ cacheSolve <- function(x, ...) {
   x$setSolve(m)
   m
 }
+
+# Test the code with 3*3 random matrix........
+mat <- matrix(sample(1:20, 9), 3)
+cacheSolve(makeCacheMatrix(mat))
